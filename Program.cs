@@ -12,12 +12,34 @@ Console.WriteLine(num3);*/
 /*Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 645 -> 5
 78 -> третьей цифры нет
-32679 -> 6
+32679 -> 6*/
 Console.WriteLine("Введите число");
 int number = int.Parse(Console.ReadLine());
-int 
+// int num3 = num2 % 10;
+if (number < 100)
+{
+    Console.WriteLine("третьей цифры нет");
+}
+    if ((number > 999) && (number < 10000))
+    {
+        int num1 = number % 100;
+        int num2 = num1 / 10;
+        Console.WriteLine(num2);
+    }
+       else if ((number > 9999) && (number < 100000))
+        {
+            int num1 = number % 1000;
+            int num2 = num1 / 100;
+            int num3 = num2 % 10;
+            Console.WriteLine(num3);
+        }
+else
+{
+    int num1 = number % 100;
+    int num2 = num1 % 10;
+    Console.WriteLine(num2);
+}
 
-Console.WriteLine(num2);*/
 
 
 
